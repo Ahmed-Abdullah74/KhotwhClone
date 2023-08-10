@@ -1,0 +1,75 @@
+.title{
+    color: #233c50;
+    font-size: 30px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button .add {
+  margin-right: 5px;
+}
+.button .eye {
+  display: none;
+}
+@media (max-width: 480px) {
+    .title{
+        font-size: 20px;
+    }
+  .button {
+    display: block;
+  }
+  .button .add {
+    margin: auto;
+  }
+  .button .icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+  }
+  .button .eye {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+    .title{
+        font-size: 20px;
+    }
+  .button {
+    display: block;
+  }
+  .button .add {
+    margin: auto;
+  }
+  .button .icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+  }
+  .button .eye {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+    .title{
+        font-size: 25px;
+    }
+  .button {
+    display: block;
+  }
+  .button .add {
+    margin: auto;
+  }
+  .button .icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+  }
+  .button .eye {
+    display: block;
+  }
+}

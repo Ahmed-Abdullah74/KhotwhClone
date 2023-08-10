@@ -1,0 +1,40 @@
+.navbar {
+  background-color: #fff;
+  position: relative;
+}
+.navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  color: #233c50;
+}
+
+.nav-icons .icon {
+  color: #233c50;
+  text-decoration: none;
+}
+.cart-icon {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  background-color: green;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+.cart-icon .counter {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: -8px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
