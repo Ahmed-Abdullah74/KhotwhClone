@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 
 function ProductDetails() {
-  const products = "http://localhost:9000/menProducts";
+  const products =
+    "https://github.com/Ahmed-Abdullah74/KhotwhClone/blob/main/src/data.json";
   const [product, setProduct] = useState({});
   const params = useParams();
   console.log(product);
