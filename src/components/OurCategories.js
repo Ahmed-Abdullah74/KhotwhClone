@@ -8,7 +8,7 @@ const OurCategories = () => {
   return (
     <>
       <div className="our-cateigories pt-4 pb-4">
-        <h3 className="mb-4 cate-heading">OurCategoriess</h3>
+        <h3 className="mb-4 cate-heading">OurCategories</h3>
         <Container>
           <Row className="d-flex align-items-center justify-content-center g-2">
             <Col sm={6} md={6} lg={6} className="cate-col position-relative">
