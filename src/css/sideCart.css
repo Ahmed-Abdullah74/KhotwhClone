@@ -1,0 +1,23 @@
+.cart-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #233c50;
+}
+.cart-item {
+  background-color: #d3d3d3;
+  height: 35px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #233c50;
+}
+.empty-cart {
+  width: 380px;
+}
+.empty-cart .empty-cart-p {
+  font-weight: 600;
+  color: #233c50;
+}
+.subtotal {
+  font-size: 17px;
+  font-weight: 500;
+}

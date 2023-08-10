@@ -1,0 +1,51 @@
+@media (max-width: 575px) {
+  .offers .offer {
+    width: 160px;
+    height: 118px;
+  }
+  .offers .offer .offer-image {
+    width: 160px;
+    height: 118px;
+  }
+}
+@media (min-width: 576px) {
+  .offers .offer {
+    width: 235px;
+    height: 165px;
+  }
+  .offers .offer .offer-image {
+    width: 235px;
+    height: 165px;
+  }
+}
+@media (min-width: 768px) {
+  .offers .offer {
+    width: 225px;
+    height: 165px;
+  }
+  .offers .offer .offer-image {
+    width: 225px;
+    height: 165px;
+  }
+}
+@media (min-width: 992px) {
+  .offers .offer {
+    width: 310px;
+    height: 225px;
+  }
+  .offers .offer .offer-image {
+    width: 310px;
+    height: 225px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offers .offer {
+    width: 365px;
+    height: 259px;
+  }
+  .offers .offer .offer-image {
+    width: 365px;
+    height: 259px;
+  }
+}
