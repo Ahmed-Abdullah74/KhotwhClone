@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 
 function ProductDetails() {
-  const products = "https://visionary-cocada-104900.netlify.app/data.json";
+  const products = "https://courageous-sfogliatella-31cb0d.netlify.app/data.json";
   const [product, setProduct] = useState({});
   const params = useParams();
   console.log(product);

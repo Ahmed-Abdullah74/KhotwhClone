@@ -1,0 +1,43 @@
+.featchers {
+  background-color: #243c4e;
+
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.featchers .free-shipping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.featchers h6 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.featchers span {
+  font-size: 35px;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+    .featchers {
+      padding: 10px 5px;
+    }
+    .featchers .row {
+      display: block;
+    }
+  .featchers .row .free-shipping {
+    width: 100%;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: start;
+  }
+  .featchers .row .free-shipping h6 {
+    font-size: 15px;
+  }
+  .featchers .row .free-shipping span {
+    font-size: 25px;
+  }
+}

@@ -6,6 +6,9 @@ import Offers from "./Offers";
 import Carousel from "./Carousel";
 import SectionHeading from "./SectionHeading";
 import MenProducts from "./MenProducts";
+import Featchers from "./Featchers";
+import Blog from "./Blog";
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -25,6 +28,11 @@ function Home() {
         <MenProducts />
         <Carousel title={"best sellers"} />
       </Container>
+      <Featchers />
+      <Container>
+        <Blog />
+      </Container>
+      <Footer />
     </>
   );
 }
