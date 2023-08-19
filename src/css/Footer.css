@@ -1,9 +1,117 @@
 .footer {
   background-color: #243c4e;
-
   bottom: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
-
+.footer-links {
+  display: block;
+}
+@media (max-width: 992px) {
+  .footer-links {
+    display: none;
+  }
+}
+.footer-links .first-links-col ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.cpoy-rights {
+  border-top: 1px solid #eee;
+}
+.cpoy-rights .rights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cpoy-rights .social-links {
+  display: none;
+}
+.cpoy-rights .apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cpoy-rights .apps img {
+  width: 200px;
+}
+@media (max-width: 992px) {
+  .cpoy-rights .rights {
+    display: block;
+    text-align: center;
+  }
+  .cpoy-rights .social-links {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .cpoy-rights .rights {
+    display: block;
+    text-align: center;
+  }
+  .cpoy-rights .apps img {
+    width: 150px;
+  }
+  .cpoy-rights .social-links {
+    display: block;
+  }
+}
+@media (max-width: 360px) {
+  .cpoy-rights .rights {
+    display: block;
+    text-align: center;
+  }
+  .cpoy-rights .apps img {
+    width: 150px;
+  }
+  .cpoy-rights .social-links {
+    display: block;
+  }
+}
+.FooterLinksMobile {
+  border-top: 1px solid #eee;
+  display: none;
+}
+.mobile-footer {
+  display: none;
+}
+@media (max-width: 992px) {
+  .FooterLinksMobile {
+    display: block;
+  }
+  .mobile-footer {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .FooterLinksMobile {
+    display: block;
+  }
+  .mobile-footer {
+    display: block;
+  }
+}
+@media (max-width: 360px) {
+  .FooterLinksMobile {
+    display: block;
+  }
+  .mobile-footer {
+    display: block;
+  }
+}
+.FooterLinksMobile .navbar {
+  background-color: #243c4e;
+  margin: 10px 0;
+}
+.FooterLinksMobile .navbar button {
+  border: none;
+  box-shadow: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+.FooterLinksMobile .collapse ul {
+}
