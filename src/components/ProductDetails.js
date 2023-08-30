@@ -42,7 +42,7 @@ function ProductDetails() {
             <div className="col-lg-4">
               <div className=" text-start p-3 bg-white">
                 <h3 className="mb-4">{item.title}</h3>
-                <h4 className="mb-4">EGP {item.price}</h4>
+                <h4 className="mb-4">EGP {item.price.toFixed(2)}</h4>
                 <SymplGroup>
                   <SymplText>
                     <p>
