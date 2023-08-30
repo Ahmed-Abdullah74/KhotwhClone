@@ -37,7 +37,7 @@ function Blog() {
           <h3 className="">Blog</h3>
         </div>
         <OwlCarousel
-          className="owl-theme"
+          className="owl-theme "
           {...options}
           width
           slideBy={2}

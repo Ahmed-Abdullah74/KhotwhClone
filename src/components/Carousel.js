@@ -17,7 +17,6 @@ function Carousel(props) {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    arrows: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -64,7 +63,7 @@ function Carousel(props) {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          slidesWidth: 160,
+          slidesWidth: 155,
           slidesSpacing: 50,
           dots: false,
         },
@@ -72,7 +71,7 @@ function Carousel(props) {
     ],
   };
   return (
-    <div className="new mb-5">
+    <div className="new mb-5 overflow-x-hidden">
       <h1 className="title text-uppercase">{props.title}</h1>
 
       <Slider {...settings}>

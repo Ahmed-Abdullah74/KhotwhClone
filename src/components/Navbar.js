@@ -19,7 +19,7 @@ function Navbar() {
     <>
       <nav
         className="navbar navbar-expand-lg "
-        style={{ backgroundColor: "#fff", position: "relative" }}
+        style={{ backgroundColor: "#fff" }}
       >
         <div className="container">
           <Link className="navbar-brand" to="/#" style={{ width: "20%" }}>
