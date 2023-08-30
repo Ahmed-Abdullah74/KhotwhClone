@@ -10,7 +10,7 @@ import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App me-0">
       <Navbar />
       <SideCart />
       <Routes>

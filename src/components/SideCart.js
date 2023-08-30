@@ -58,7 +58,7 @@ function SideCart() {
                     {cart.map((product) => (
                       <>
                         <tr
-                          className="p-2"
+                          className="p-0"
                           style={{
                             height: "70px",
                             display: "flex",

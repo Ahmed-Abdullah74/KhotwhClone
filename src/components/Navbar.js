@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className="navbar navbar-expand-lg  "
+        className="navbar navbar-expand-lg "
         style={{ backgroundColor: "#fff", position: "relative" }}
       >
         <div className="container">
@@ -76,7 +76,7 @@ function Navbar() {
               <span className="material-symbols-outlined">favorite</span>
             </Link>
             <Link className="bag d-flex align-items-center icon" to={"/cart"}>
-              <span className="material-symbols-outlined">shopping_bag</span>{" "}
+              <span className="material-symbols-outlined">shopping_bag</span>
               Bag(
               {cart.length})
             </Link>

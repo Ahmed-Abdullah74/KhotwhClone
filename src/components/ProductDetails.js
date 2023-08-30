@@ -1,23 +1,22 @@
-import { useParams } from "react-router-dom";
 import "../css/productDetails.css";
-import { useEffect, useState } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 function ProductDetails() {
-  const products = "https://courageous-sfogliatella-31cb0d.netlify.app/data.json";
+  const products = "http://localhost:9000/menProducts";
   const [product, setProduct] = useState({});
   const params = useParams();
-  console.log(product);
 
   useEffect(() => {
     fetch(`${products}/${params.productId}`)
       .then((res) => res.json())
-      .then((product) => {
-        console.log(product);
-        setProduct(product);
-      });
+      .then((product) => setProduct(product));
   }, [params.productId]);
+
   return (
     <>
       <div className="product bg-white ">

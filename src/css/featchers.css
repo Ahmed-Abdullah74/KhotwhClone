@@ -22,12 +22,12 @@
 }
 
 @media (max-width: 768px) {
-    .featchers {
-      padding: 10px 5px;
-    }
-    .featchers .row {
-      display: block;
-    }
+  .featchers {
+    padding: 10px 5px;
+  }
+  .featchers .row {
+    display: block;
+  }
   .featchers .row .free-shipping {
     width: 100%;
     margin-bottom: 5px;
