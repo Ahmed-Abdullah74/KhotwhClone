@@ -1,11 +1,15 @@
-.card {
-  color: #4867aa;
+@media (max-width: 768px) {
+  .product-details {
+    text-align: center;
+  }
 }
 .size-list {
-  width: 38%;
+  margin-bottom: 30px;
+  width: 75%;
 }
 .size-list li {
   border: 1px solid #e5e5e5;
+
   width: 33px;
   height: 33px;
   border-radius: 5px;

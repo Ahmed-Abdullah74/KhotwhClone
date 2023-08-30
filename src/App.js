@@ -8,6 +8,8 @@ import SideCart from "./components/SideCart";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProductDetails from "./components/ProductDetails";
 
+import Men from "./components/Men";
+
 function App() {
   return (
     <div className="App me-0">
@@ -16,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="product/:productId" element={<ProductDetails />} />
+        <Route path="men" element={<Men />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>

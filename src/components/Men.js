@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Button, Col, Container, Row, Image } from "react-bootstrap";
 import { addToCart } from "../rtk/slices/cart-slice";
 import { useDispatch } from "react-redux";
@@ -6,14 +7,18 @@ import { useDispatch } from "react-redux";
 import Products from "../Data/menProductsdata.json";
 import "../css/productsSection.css";
 import { Link } from "react-router-dom";
-
-const MenProducts = () => {
-  // Use the useDispatch hook to dispatch actions
+import Footer from "./Footer";
+function Men() {
   const dispatch = useDispatch();
-
   return (
     <div className="men-products mb-4">
       <Container>
+        <span
+          className="text-start d-flex flex-start"
+          style={{ fontSize: "12px" }}
+        >
+          Home / Men
+        </span>
         <Row>
           {Products.map((item) => (
             <Col sm={6} md={4} lg={3} key={item.id} className="col-6">
@@ -25,15 +30,16 @@ const MenProducts = () => {
                 </Link>
                 <div className="item-card-body">
                   <Link to={`/product/${item.id}`}>
-                    <p
+                    <h6
                       style={{
                         marginBottom: "2px",
-                        fontSize: "14px",
+                        fontSize: "12px",
                         color: "#233c50",
+                        fontWeight: "400",
                       }}
                     >
                       {item.title}
-                    </p>
+                    </h6>
                   </Link>
                   <p style={{ fontSize: "18px", color: "#233c50" }}>
                     EGP {item.price.toFixed(2)}
@@ -62,11 +68,12 @@ const MenProducts = () => {
                 </div>
               </div>
             </Col>
-          )).slice(1, 13)}
+          ))}
         </Row>
       </Container>
+      <Footer />
     </div>
   );
-};
+}
 
-export default MenProducts;
+export default Men;

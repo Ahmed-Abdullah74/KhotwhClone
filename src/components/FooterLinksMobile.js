@@ -29,10 +29,10 @@ const FooterLinksMobile = () => {
           </div>
         </form>
       </div>
-      <div class=" FooterLinksMobile position-relative">
-        <nav class="navbar">
+      <div className=" FooterLinksMobile position-relative">
+        <nav className="navbar">
           <button
-            class="navbar-toggler "
+            className="navbar-toggler "
             type="button"
             data-toggle="collapse"
             data-target="#shop"
@@ -43,8 +43,8 @@ const FooterLinksMobile = () => {
             <div className="shop">shop</div>
           </button>
         </nav>
-        <div class="collapse" id="shop">
-          <div class=" p-2">
+        <div className="collapse" id="shop">
+          <div className=" p-2">
             <ul className="list-unstyled text-center">
               <li>
                 <a href="/#" alt="...">
@@ -75,10 +75,10 @@ const FooterLinksMobile = () => {
           </div>
         </div>
       </div>
-      <div class=" FooterLinksMobile position-relative">
-        <nav class="navbar">
+      <div className=" FooterLinksMobile position-relative">
+        <nav className="navbar">
           <button
-            class="navbar-toggler "
+            className="navbar-toggler "
             type="button"
             data-toggle="collapse"
             data-target="#info"
@@ -89,8 +89,8 @@ const FooterLinksMobile = () => {
             <div className="shop">information</div>
           </button>
         </nav>
-        <div class="collapse" id="info">
-          <div class=" p-2">
+        <div className="collapse" id="info">
+          <div className=" p-2">
             <ul className="list-unstyled text-center">
               <li>
                 <a href="/#" alt="...">
@@ -130,10 +130,10 @@ const FooterLinksMobile = () => {
             </ul>
           </div>
         </div>
-        <div class=" FooterLinksMobile position-relative text-center">
-          <nav class="navbar">
+        <div className=" FooterLinksMobile position-relative text-center">
+          <nav className="navbar">
             <button
-              class="navbar-toggler "
+              className="navbar-toggler "
               type="button"
               data-toggle="collapse"
               data-target="#Policies"
@@ -144,8 +144,8 @@ const FooterLinksMobile = () => {
               <div className="shop">Policies</div>
             </button>
           </nav>
-          <div class="collapse" id="Policies">
-            <div class=" p-2">
+          <div className="collapse" id="Policies">
+            <div className=" p-2">
               <ul className="list-unstyled text-center">
                 <li>
                   <a href="/#" alt="...">

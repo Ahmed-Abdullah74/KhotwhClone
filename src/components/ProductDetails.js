@@ -1,37 +1,58 @@
 import "../css/productDetails.css";
-
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
+import { useSelector } from "react-redux";
+import { setProducts } from "../rtk/slices/products-slice";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-
+import sympl from "../images/sympl-logo.svg";
+import Carousel from "./Carousel";
+import Footer from "./Footer";
+import { Container } from "react-bootstrap";
 function ProductDetails() {
-  const products = "http://localhost:9000/menProducts";
-  const [product, setProduct] = useState({});
+  const products = useSelector(setProducts);
+  const [item, setItem] = useState([]);
   const params = useParams();
 
   useEffect(() => {
-    fetch(`${products}/${params.productId}`)
-      .then((res) => res.json())
-      .then((product) => setProduct(product));
-  }, [params.productId]);
+    products
+      // eslint-disable-next-line eqeqeq
+      .filter((product) => product.id == params.productId)
+      .map((item) => setItem(item));
+  }, [products, params.productId]);
 
   return (
     <>
       <div className="product bg-white ">
-        <div className="container">
-          <span className="text-start d-flex flex-start">
-            Home / {product.title}
+        <Container>
+          <span
+            className="text-start d-flex flex-start"
+            style={{ fontSize: "12px" }}
+          >
+            Home / {item.title}
           </span>
-          <div className="row">
-            <div className="col-7">
-              <img src={product.image} alt="product_image" />
+          <div
+            className="row g-1 product-details"
+            style={{ marginBottom: "50px" }}
+          >
+            <div className="col-lg-7">
+              <img src={item.image} alt="product_image" className="img-fluid" />
             </div>
-            <div className="col-5">
-              <div className="card text-start p-3 bg-white">
-                <h3 className="mb-4">{product.title}</h3>
-                <h4 className="mb-4">EGP {product.price}</h4>
+            <div className="col-lg-4">
+              <div className=" text-start p-3 bg-white">
+                <h3 className="mb-4">{item.title}</h3>
+                <h4 className="mb-4">EGP {item.price}</h4>
+                <SymplGroup>
+                  <SymplText>
+                    <p>
+                      Pay over 3 payments of <span>37.5 EGP</span> with your
+                      bank card.
+                    </p>
+                    <span>0 interest.</span> <span>0 registration.</span>
+                  </SymplText>
+                  <SymplImg src={sympl} />
+                </SymplGroup>
                 <span className="mb-1">Size:</span>
                 <ul className="ms-0 list-unstyled d-flex justify-content-around align-items-center size-list">
                   <li>
@@ -60,20 +81,24 @@ function ProductDetails() {
                     </a>
                   </li>
                 </ul>
-                <span>Color: {product.color}</span>
+                <span style={{ marginBottom: "20px" }}>
+                  Color: {item.color}
+                </span>
                 <div className="size-guid d-flex align-items-center mb-4">
-                  <span class="material-symbols-outlined">checkroom</span>
+                  <span className="material-symbols-outlined">checkroom</span>
                   <a href="/#">Size Guid</a>
                 </div>
                 <div className="numberOfItems mb-4 d-flex align-items-center justify-content-between p-1">
                   <div className="remove d-flex align-items-center ms-1">
-                    <span class="material-symbols-outlined icon remove">
+                    <span className="material-symbols-outlined icon remove">
                       remove
                     </span>
                   </div>
                   <div className="quantity d-flex align-items-center">1</div>
                   <div className="add d-flex align-items-center me-1">
-                    <span class="material-symbols-outlined icon add">add</span>
+                    <span className="material-symbols-outlined icon add">
+                      add
+                    </span>
                   </div>
                 </div>
                 <div className="buttons row g-3 mb-4">
@@ -106,10 +131,27 @@ function ProductDetails() {
               </div>
             </div>
           </div>
-        </div>
+          <Carousel title={"Related Products"} />
+        </Container>
+        <Footer />
       </div>
     </>
   );
 }
 
 export default ProductDetails;
+
+const SymplGroup = styled.div`
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin-botton: 3px;
+  }
+`;
+const SymplText = styled.div``;
+const SymplImg = styled.img``;
