@@ -30,7 +30,7 @@ const WomenProducts = (props) => {
                         color: "#233c50",
                       }}
                     >
-                      {item.title.slice(0, 30)}
+                      {item.title.slice(0, 25)}
                     </p>
                   </Link>
                   <p style={{ fontSize: "18px", color: "#233c50" }}>
