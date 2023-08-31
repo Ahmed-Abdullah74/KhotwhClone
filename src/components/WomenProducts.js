@@ -36,6 +36,33 @@ const WomenProducts = (props) => {
                   <p style={{ fontSize: "18px", color: "#233c50" }}>
                     EGP {item.price.toFixed(2)}
                   </p>
+                  <ul className="ms-auto me-auto list-unstyled d-flex justify-content-around align-items-center size-list">
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        M
+                      </a>
+                    </li>
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        L
+                      </a>
+                    </li>
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        XL
+                      </a>
+                    </li>
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        2XL
+                      </a>
+                    </li>
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        3XL
+                      </a>
+                    </li>
+                  </ul>
                   <div className="button">
                     <Button
                       variant="danger"
