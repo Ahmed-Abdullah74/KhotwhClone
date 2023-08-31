@@ -9,6 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ProductDetails from "./components/ProductDetails";
 
 import Men from "./components/Men";
+import Women from "./components/Women";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="product/:productId" element={<ProductDetails />} />
         <Route path="men" element={<Men />} />
+        <Route path="women" element={<Women />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>

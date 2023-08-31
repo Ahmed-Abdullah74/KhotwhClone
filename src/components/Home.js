@@ -9,6 +9,7 @@ import MenProducts from "./MenProducts";
 import Featchers from "./Featchers";
 import Blog from "./Blog";
 import Footer from "./Footer";
+import WomenProducts from "./WomenProducts";
 
 function Home() {
   return (
@@ -26,7 +27,7 @@ function Home() {
         </Container>
         <SectionHeading title={"women"} />
         <Container>
-          <MenProducts />
+          <WomenProducts />
           <Carousel title={"best sellers"} />
         </Container>
         <Featchers />

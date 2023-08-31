@@ -71,12 +71,12 @@ function Carousel(props) {
     ],
   };
   return (
-    <div className="new mb-5 overflow-x-hidden">
+    <div className="new mb-5 overflow-hidden">
       <h1 className="title text-uppercase">{props.title}</h1>
 
       <Slider {...settings}>
         {newArrivals.map((item) => (
-          <div className="item-card mb-4 " key={item.id}>
+          <div className="item-card mb-5 " key={item.id}>
             <div className="item-image d-flex justify-content-center">
               <Image src={item.image} alt={"..."} className="img-fluid" />
             </div>

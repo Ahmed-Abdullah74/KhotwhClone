@@ -93,7 +93,7 @@ function SideCart() {
                               <div className="quantity d-flex justify-content-center align-items-center ">
                                 <span
                                   className="material-symbols-outlined"
-                                  style={{ color: "red" }}
+                                  style={{ color: "red", cursor: "pointer" }}
                                   onClick={() =>
                                     dispatch(deletefromCart(product))
                                   }
@@ -113,7 +113,7 @@ function SideCart() {
                                 >
                                   <div
                                     className="minus d-flex justify-content-center align-items-center"
-                                    style={{ width: "30px" }}
+                                    style={{ width: "30px", cursor: "pointer" }}
                                   >
                                     <span className="material-symbols-outlined">
                                       remove
@@ -133,7 +133,7 @@ function SideCart() {
                                   </div>
                                   <div
                                     className="add d-flex justify-content-center align-items-center"
-                                    style={{ width: "30px" }}
+                                    style={{ width: "30px", cursor: "pointer" }}
                                   >
                                     <span className="material-symbols-outlined">
                                       add

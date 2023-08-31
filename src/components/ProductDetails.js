@@ -10,7 +10,9 @@ import sympl from "../images/sympl-logo.svg";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
 import { Container } from "react-bootstrap";
+import { setWomenProducts } from "../rtk/slices/WomenProductSlice";
 function ProductDetails() {
+  const womenProducts = useSelector(setWomenProducts);
   const products = useSelector(setProducts);
   const [item, setItem] = useState([]);
   const params = useParams();
@@ -21,6 +23,12 @@ function ProductDetails() {
       .filter((product) => product.id == params.productId)
       .map((item) => setItem(item));
   }, [products, params.productId]);
+  useEffect(() => {
+    womenProducts
+      // eslint-disable-next-line eqeqeq
+      .filter((product) => product.id == params.productId)
+      .map((item) => setItem(item));
+  }, [womenProducts, params.productId]);
 
   return (
     <>
