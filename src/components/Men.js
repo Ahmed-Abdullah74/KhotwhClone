@@ -41,7 +41,7 @@ function Men() {
                         fontWeight: "400",
                       }}
                     >
-                      {item.title}
+                      {item.title.slice(0, 25)}
                     </h6>
                   </Link>
                   <p style={{ fontSize: "18px", color: "#233c50" }}>
