@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../css/productsSection.css";
 import { Button, Col, Container, Row, Image } from "react-bootstrap";
 import { addToCart } from "../rtk/slices/cart-slice";
 import { useDispatch } from "react-redux";
@@ -24,12 +24,15 @@ function Men() {
             <Col sm={6} md={4} lg={3} key={item.id} className="col-6">
               <div className="item-card mb-4 ">
                 <Link to={`/product/${item.id}`}>
-                  <div className="item-image d-flex justify-content-center">
+                  <div className="item-image d-flex justify-content-center mb-2">
                     <Image src={item.image} alt={"..."} className="img-fluid" />
                   </div>
                 </Link>
                 <div className="item-card-body">
-                  <Link to={`/product/${item.id}`}>
+                  <Link
+                    to={`/product/${item.id}`}
+                    style={{ textDecoration: "none" }}
+                  >
                     <h6
                       style={{
                         marginBottom: "2px",
@@ -44,6 +47,33 @@ function Men() {
                   <p style={{ fontSize: "18px", color: "#233c50" }}>
                     EGP {item.price.toFixed(2)}
                   </p>
+                  <ul className="ms-auto me-auto list-unstyled d-flex justify-content-around align-items-center size-list">
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        M
+                      </a>
+                    </li>
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        L
+                      </a>
+                    </li>
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        XL
+                      </a>
+                    </li>
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        2XL
+                      </a>
+                    </li>
+                    <li>
+                      <a className="text-decoration-none" href="/#" alt="...">
+                        3XL
+                      </a>
+                    </li>
+                  </ul>
                   <div className="button">
                     <Button
                       variant="danger"

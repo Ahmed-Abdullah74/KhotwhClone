@@ -7,13 +7,21 @@
   margin-bottom: 30px;
   width: 75%;
 }
+@media (max-width: 768px) {
+  .size-list {
+    width: 100%;
+  }
+  .size-list li {
+    margin-right: 5px;
+  }
+}
 .size-list li {
   border: 1px solid #e5e5e5;
-
-  width: 33px;
-  height: 33px;
+  width: 25px;
+  height: 25px;
+  padding: 0 4px;
   border-radius: 5px;
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   justify-content: center;
   align-items: center;

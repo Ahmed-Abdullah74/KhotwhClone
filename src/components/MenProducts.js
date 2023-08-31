@@ -19,12 +19,15 @@ const MenProducts = () => {
             <Col sm={6} md={4} lg={3} key={item.id} className="col-6">
               <div className="item-card mb-4 ">
                 <Link to={`/product/${item.id}`}>
-                  <div className="item-image d-flex justify-content-center">
+                  <div className="item-image d-flex justify-content-center mb-2">
                     <Image src={item.image} alt={"..."} className="img-fluid" />
                   </div>
                 </Link>
                 <div className="item-card-body">
-                  <Link to={`/product/${item.id}`}>
+                  <Link
+                    to={`/product/${item.id}`}
+                    style={{ textDecoration: "none" }}
+                  >
                     <p
                       style={{
                         marginBottom: "2px",
@@ -32,7 +35,7 @@ const MenProducts = () => {
                         color: "#233c50",
                       }}
                     >
-                      {item.title}
+                      {item.title.slice(0, 19)}
                     </p>
                   </Link>
                   <p style={{ fontSize: "18px", color: "#233c50" }}>

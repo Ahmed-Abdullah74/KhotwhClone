@@ -24,12 +24,15 @@ function Women() {
             <Col sm={6} md={4} lg={3} key={item.id} className="col-6">
               <div className="item-card mb-4 ">
                 <Link to={`/product/${item.id}`}>
-                  <div className="item-image d-flex justify-content-center">
+                  <div className="item-image d-flex justify-content-center mb-2">
                     <Image src={item.image} alt={"..."} className="img-fluid" />
                   </div>
                 </Link>
                 <div className="item-card-body">
-                  <Link to={`/product/${item.id}`}>
+                  <Link
+                    to={`/product/${item.id}`}
+                    style={{ textDecoration: "none" }}
+                  >
                     <h6
                       style={{
                         marginBottom: "2px",
